@@ -1,0 +1,41 @@
+{
+  "name": "sapper-smui",
+  "description": "Sapper (Svelte) + SMUI (Material UI) Template",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pham/sapper-smui.git"
+  },
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "sapper dev --port 5002",
+    "build": "sapper build --legacy",
+    "export": "sapper export --legacy",
+    "start": "node __sapper__/build"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "polka": "next",
+    "sirv": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@smui/card": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.26.11",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-svelte": "^6.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "sapper": "^0.28.5",
+    "svelte": "^3.24.1"
+  }
+}
