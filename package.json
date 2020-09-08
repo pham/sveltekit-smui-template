@@ -2,6 +2,8 @@
   "name": "sapper-smui",
   "description": "Sapper (Svelte) + SMUI (Material UI) Template",
   "private": false,
+  "license": "MIT",
+  "author": "Paul Pham <git@aquaron.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:pham/sapper-smui.git"
