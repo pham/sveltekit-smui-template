@@ -1,12 +1,15 @@
 {
   "name": "sapper-smui-template",
-  "description": "Sapper (Svelte) + SMUI (Material UI) Template",
-  "private": false,
+  "description": "Sapper + Svelte Material UI Template",
   "license": "MIT",
   "author": "Paul Pham <git@aquaron.com>",
+  "homepage": "https://sapper-smui-template.aquaron.com/",
   "repository": {
     "type": "git",
     "url": "git@github.com:pham/sapper-smui-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pham/sapper-smui-template/issues"
   },
   "version": "0.0.0",
   "scripts": {
