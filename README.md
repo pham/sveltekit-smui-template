@@ -1,13 +1,15 @@
 # Sapper + Svelte Material UI
-
 ![CodeQL](https://github.com/pham/sapper-smui/workflows/CodeQL/badge.svg)
-![svelte](https://badgen.net/npm/v/svelte?label=svelte)
-![sapper](https://badgen.net/npm/v/sapper?label=sapper)
-![rollup](https://badgen.net/npm/v/rollup?label=rollup)
-![smui](https://badgen.net/npm/v/smui?label=smui)
+![svelte](https://badgen.net/npm/v/svelte?label=Svelte)
+![sapper](https://badgen.net/npm/v/sapper?label=Sapper)
+![rollup](https://badgen.net/npm/v/rollup?label=Rollup)
+![smui](https://badgen.net/npm/v/smui?label=SMUI)
+![zeit](https://badgen.net/github/status/zeit/hyper/master/ci?label=Deployed%20to%20Vercel)
 
 Tempate for [sapper-template-rollup] + [svelte-material-ui].
-Correctly configured [rollup] to use with your Sapper + SMUI setup.
+
+What it looks like:
+https://sapper-smui-template.aquaron.com
 
 ```sh
 $ npx degit "pham/sapper-smui" my-app
