@@ -36,7 +36,11 @@
     "@smui/card": "^1.0.0",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
+<<<<<<< HEAD
     "rollup": "^2.32.1",
+=======
+    "rollup": "^2.32.0",
+>>>>>>> 10ed043dae6dca11836c9c9284b91bfc8cdb5c89
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-svelte": "^6.1.0",
     "rollup-plugin-terser": "^7.0.2",
