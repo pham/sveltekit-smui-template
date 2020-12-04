@@ -42,8 +42,10 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
-        dev,
-        hydratable: true,
+        compilerOptions: {
+          dev,
+          hydratable: true
+        },
         emitCss: true,
       }),
       resolve({
@@ -57,11 +59,6 @@ export default {
         extensions: ['.js', '.mjs', '.html', '.svelte'],
         babelHelpers: 'runtime',
         exclude: ['node_modules/@babel/**'],
-        presets: [
-          ['@babel/preset-env', {
-            targets: '> 0.25%, not dead'
-          }]
-        ],
         plugins: [
           '@babel/plugin-syntax-dynamic-import',
           ['@babel/plugin-transform-runtime', {
@@ -88,9 +85,11 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
-        generate: 'ssr',
-        hydratable: true,
-        dev
+        compilerOptions: {
+          generate: 'ssr',
+          hydratable: true,
+          dev
+        }
       }),
       resolve({
         dedupe: ['svelte'],
