@@ -5,14 +5,11 @@
 <h1>Home</h1>
 
 <div>
-  <Button variant="unelevated">
+  <Button variant='unelevated'>
     <Label>Click</Label>
   </Button>
 </div>
 
-<style>
-</style>
-
 <script>
-  import Button, { Label } from '@smui/button';
+  import Button, { Label } from '@smui/button/styled';
 </script>
