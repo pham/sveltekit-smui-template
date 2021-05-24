@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/pham/sapper-smui-template/issues"
   },
-  "version": "0.0.2",
+  "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev --port 5002",
     "build": "sapper build --legacy",
