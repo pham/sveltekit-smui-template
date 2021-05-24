@@ -1,12 +1,12 @@
-<Nav {segment}/>
-
 <main>
+  {#if segment}
+    <h1>{segment}</h1>
+  {/if}
   <slot />
 </main>
 
 <script>
-  import Nav from '../components/Nav.svelte';
-
+  import './_app.scss';
   export let segment;
 </script>
 

@@ -1,0 +1,10 @@
+@use '@material/theme/color-palette';
+
+@use '@material/theme/index' as theme with (
+  $background: #fff,
+  $primary: #EB5E28,
+  $secondary: #252422,
+  $surface: #ccc5b9,
+  $on-secondary: #FFFCF2,
+  $on-surface: #403D39,
+);

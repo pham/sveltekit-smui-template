@@ -1,0 +1,79 @@
+@use 'sass:color';
+@use 'smui-theme';
+
+@use '@material/theme/styles';
+
+@use '@material/theme/index' as theme;
+
+html {
+  --monoFont: 'Roboto Mono', monospace;
+  --sansFont: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: theme.$background;
+  color: theme.$on-surface;
+  font-family: var(--sansFont);
+  font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: theme.$background;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: theme.$surface;
+  border-radius: 6px;
+  border: 3px solid theme.$background;
+}
+
+a {
+  color: theme.$secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+code {
+  font-family: var(--monoFont);
+  font-size: calc(1em - 2px);
+  background-color: theme.$secondary;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
+.material-icons {
+  vertical-align: text-bottom;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.vertical-center .material-icons {
+  vertical-align: initial!important;
+}
+
+.surface-lighter-bg {
+  background-color: color.scale(theme.$surface, $lightness: +30%);
+}
+.surface-darker-bg {
+  background-color: color.scale(theme.$surface, $lightness: -30%);
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+}

@@ -1,15 +1,18 @@
 <svelte:head>
-  <title>Home</title>
+  <title>Svelte Sapper Material UI</title>
 </svelte:head>
 
-<h1>Home</h1>
+<center>
+  <ThemeButton />
 
-<div>
-  <Button variant='unelevated'>
-    <Label>Click</Label>
-  </Button>
-</div>
+  <div>
+    <Button variant='unelevated'>
+      <Label>Click</Label>
+    </Button>
+  </div>
+</center>
 
 <script>
-  import Button, { Label } from '@smui/button/styled';
+  import Button, { Label } from '@smui/button';
+  import ThemeButton from '../components/ThemeButton.svelte';
 </script>

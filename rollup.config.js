@@ -7,7 +7,7 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
-
+import fs from 'fs';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -19,18 +19,35 @@ const onwarn = (warning, onwarn) =>
   (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
   onwarn(warning);
 
-const postcssOptions = () => ({
-  extensions: ['.scss', '.sass'],
-  extract: false,
+const postcssOptions = light => ({
+  extensions: ['.scss'],
+  extract: 'smui.css',
   minimize: true,
+  onExtract: light
+    ? null
+    : getExtracted => {
+      const { code } = getExtracted();
+      require('cssnano')
+        .process(code, { from: undefined })
+        .then(({ css }) => {
+          const filename = `${config.client.output().dir}/smui-dark.css`;
+          fs.writeFileSync(filename, css);
+        });
+      return false;
+    },
   use: [
     ['sass', {
-      includePaths: [
-        './src/theme',
-        './node_modules'
-      ]
+      includePaths: [ `./src/theme${light ? '' : '/dark'}`, './node_modules' ]
     }]
   ]
+});
+
+const replaceOptions = (browser = true) => ({
+  preventAssignment: true,
+  values: {
+    'process.browser': browser,
+    'process.env.NODE_ENV': JSON.stringify(mode)
+  }
 });
 
 export default {
@@ -38,24 +55,19 @@ export default {
     input: config.client.input(),
     output: config.client.output(),
     plugins: [
-      replace({
-        preventAssignment: true,
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
+      replace(replaceOptions()),
       svelte({
         compilerOptions: {
           dev,
           hydratable: true
         },
-        emitCss: true,
       }),
       resolve({
         browser: true,
         dedupe: ['svelte']
       }),
       commonjs(),
-      postcss(postcssOptions()),
+      postcss(postcssOptions(true)),
 
       legacy && babel({
         extensions: ['.js', '.mjs', '.html', '.svelte'],
@@ -82,17 +94,14 @@ export default {
     input: config.server.input(),
     output: config.server.output(),
     plugins: [
-      replace({
-        preventAssignment: true,
-        'process.browser': false,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
+      replace(replaceOptions(false)),
       svelte({
         compilerOptions: {
-          generate: 'ssr',
+          dev,
           hydratable: true,
-          dev
-        }
+          generate: 'ssr',
+        },
+        emitCss: false,
       }),
       resolve({
         dedupe: ['svelte'],
@@ -113,11 +122,7 @@ export default {
     output: config.serviceworker.output(),
     plugins: [
       resolve(),
-      replace({
-        preventAssignment: true,
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
+      replace(replaceOptions()),
       commonjs(),
       !dev && terser()
     ],

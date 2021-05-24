@@ -1,0 +1,9 @@
+@use '@material/theme/color-palette';
+
+@use '@material/theme/index' as theme with (
+  $primary: color-palette.$orange-900,
+  $secondary: color-palette.$blue-grey-50,
+  $surface: color-palette.$blue-grey-800,
+  $background: color-palette.$blue-grey-900,
+  $error: color-palette.$red-700,
+);
