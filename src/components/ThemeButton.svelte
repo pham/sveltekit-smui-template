@@ -3,7 +3,7 @@
 </IconButton>
 
 <script>
-  import IconButton from '@smui/icon-button';
+  import IconButton from '@smui/icon-button/styled';
 
   let lightTheme = typeof window === 'undefined'
     || window.matchMedia ('(prefers-color-scheme: light)').matches;

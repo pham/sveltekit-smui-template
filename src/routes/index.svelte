@@ -13,6 +13,6 @@
 </center>
 
 <script>
-  import Button, { Label } from '@smui/button';
+  import Button, { Label } from '@smui/button/styled';
   import ThemeButton from '../components/ThemeButton.svelte';
 </script>
