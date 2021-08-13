@@ -8,6 +8,7 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import fs from 'fs';
+import cssnano from 'cssnano';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -27,7 +28,7 @@ const postcssOptions = light => ({
     ? null
     : getExtracted => {
       const { code } = getExtracted();
-      require('cssnano')
+      cssnano()
         .process(code, { from: undefined })
         .then(({ css }) => {
           const filename = `${config.client.output().dir}/smui-dark.css`;
