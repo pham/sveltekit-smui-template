@@ -1,23 +1,21 @@
-# Sapper + Svelte Material UI
-![CodeQL](https://github.com/pham/sapper-smui/workflows/CodeQL/badge.svg)
-![svelte](https://badgen.net/npm/v/svelte?label=Svelte)
-![sapper](https://badgen.net/npm/v/sapper?label=Sapper)
-![rollup](https://badgen.net/npm/v/rollup?label=Rollup)
-![smui](https://badgen.net/npm/v/smui?label=SMUI)
-![zeit](https://badgen.net/github/status/zeit/hyper/master/ci?label=Deployed%20to%20Vercel)
+# SvelteKit Material UI
+![CodeQL](https://github.com/pham/sveltekit-smui/workflows/CodeQL/badge.svg)
+![Svelte](https://badgen.net/npm/v/svelte?label=Svelte)
+![SvelteKit](https://badgen.net/npm/v/@sveltejs/kit/next?label=SvelteKit)
+![SMUI](https://badgen.net/npm/v/smui?label=SMUI)
+![Zeit](https://badgen.net/github/status/zeit/hyper/master/ci?label=Deployed%20to%20Vercel)
 
-Tempate for [sapper-template-rollup] + [svelte-material-ui].
+Tempate for [sveltejs-kit] + [svelte-material-ui].
 
 What it looks like:
-https://sapper-smui-template.aquaron.com
+https://sveltekit-smui-template.aquaron.com
 
 ```sh
-$ npx degit "pham/sapper-smui" my-app
+$ npx degit "pham/sveltekit-smui" my-app
 $ cd my-app
 $ npm i
 $ npm run dev
 ```
 
-[rollup]: https://github.com/rollup/rollup
-[sapper-template-rollup]: https://github.com/sveltejs/sapper-template-rollup
+[sveltejs-kit]: https://github.com/sveltejs/kit
 [svelte-material-ui]: https://github.com/hperrin/svelte-material-ui
