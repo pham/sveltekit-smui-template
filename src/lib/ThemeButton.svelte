@@ -3,7 +3,7 @@
 </IconButton>
 
 <script>
-  import IconButton from '@smui/icon-button/styled';
+  import IconButton from '@smui/icon-button';
 
   let lightTheme = typeof window === 'undefined'
     || window.matchMedia ('(prefers-color-scheme: light)').matches;
@@ -18,10 +18,10 @@
       themeLink.id = 'theme';
     }
 
-    themeLink.href = `client/smui${lightTheme ? '' : '-dark'}.css`;
+    themeLink.href = `/smui${lightTheme ? '' : '-dark'}.css`;
 
     document.head
-      .querySelector('link[href="client/smui-dark.css"]')
+      .querySelector('link[href="/smui-dark.css"]')
       .insertAdjacentElement('afterend', themeLink);
   }
 </script>

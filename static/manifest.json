@@ -1,8 +1,8 @@
 {
   "background_color": "#ffffff",
   "theme_color": "#333333",
-  "name": "sapper-smui",
-  "short_name": "sapper-smui",
+  "name": "sveltekit-smui",
+  "short_name": "sveltekit-smui",
   "display": "minimal-ui",
   "start_url": "/",
   "icons": [

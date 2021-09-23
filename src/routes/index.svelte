@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Svelte Sapper Material UI</title>
+  <title>SvelteKit Material UI</title>
 </svelte:head>
 
 <center>
@@ -13,6 +13,6 @@
 </center>
 
 <script>
-  import Button, { Label } from '@smui/button/styled';
-  import ThemeButton from '../components/ThemeButton.svelte';
+  import Button, { Label } from '@smui/button';
+  import ThemeButton from '$lib/ThemeButton.svelte';
 </script>
