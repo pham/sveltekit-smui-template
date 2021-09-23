@@ -3,7 +3,6 @@
 ![Svelte](https://badgen.net/npm/v/svelte?label=Svelte)
 ![SvelteKit](https://badgen.net/npm/v/@sveltejs/kit/next?label=SvelteKit)
 ![SMUI](https://badgen.net/npm/v/smui?label=SMUI)
-![Zeit](https://badgen.net/github/status/zeit/hyper/master/ci?label=Deployed%20to%20Vercel)
 
 Tempate for [sveltejs-kit] + [svelte-material-ui].
 
