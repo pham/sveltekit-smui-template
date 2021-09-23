@@ -1,47 +1,32 @@
 {
-  "name": "sapper-smui-template",
-  "description": "Sapper + Svelte Material UI Template",
+  "name": "sveltekit-smui-template",
+  "description": "SvelteKit + Svelte Material UI Template",
   "license": "MIT",
   "author": "Paul Pham <git@aquaron.com>",
-  "homepage": "https://sapper-smui-template.aquaron.com/",
+  "homepage": "https://svetekit-smui-template.aquaron.com/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pham/sapper-smui-template.git"
+    "url": "git@github.com:pham/sveltekit-smui-template.git"
   },
   "bugs": {
-    "url": "https://github.com/pham/sapper-smui-template/issues"
+    "url": "https://github.com/pham/sveltekit-smui-template/issues"
   },
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "sapper dev --port 5002",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build"
-  },
-  "dependencies": {
-    "compression": "^1.7.4",
-    "polka": "next",
-    "sirv": "^1.0.17"
+    "dev": "svelte-kit dev --host 0.0.0.0 --port 5002",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
+    "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
+    "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.6",
-    "@babel/runtime": "^7.15.4",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "@rollup/plugin-replace": "^3.0.0",
-    "@smui/card": "^4.2.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "rollup": "^2.56.3",
-    "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "sapper": "^0.29.2",
-    "sass": "^1.41.1",
-    "svelte": "^3.42.6"
+    "@smui/button": "^5.0.0-beta.5",
+    "@smui/card": "^5.0.0-beta.5",
+    "@sveltejs/kit": "next",
+    "smui-theme": "^5.0.0-beta.5",
+    "svelte": "^3.42.6",
+    "svelte-preprocess": "^4.9.5"
   }
 }
