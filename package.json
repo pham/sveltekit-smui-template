@@ -24,10 +24,11 @@
   "devDependencies": {
     "@smui/button": "^5.0.0-beta.5",
     "@smui/card": "^5.0.0-beta.5",
-    "@sveltejs/adapter-vercel": "next",
+    "@sveltejs/adapter-vercel": "^1.0.0-next.29",
+    "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
     "smui-theme": "^5.0.0-beta.5",
-    "svelte": "^3.42.6",
+    "svelte": "^3.43.0",
     "svelte-preprocess": "^4.9.5"
   }
 }

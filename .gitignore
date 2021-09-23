@@ -7,3 +7,4 @@ yarn-error.log
 .env
 *.swp
 static/smui*.css
+.vercel_build_output/
