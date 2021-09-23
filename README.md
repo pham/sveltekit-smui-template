@@ -1,5 +1,5 @@
 # SvelteKit Material UI
-![CodeQL](https://github.com/pham/sveltekit-smui/workflows/CodeQL/badge.svg)
+![CodeQL](https://github.com/pham/sveltekit-smui-template/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Svelte](https://badgen.net/npm/v/svelte?label=Svelte)
 ![SvelteKit](https://badgen.net/npm/v/@sveltejs/kit/next?label=SvelteKit)
 ![SMUI](https://badgen.net/npm/v/smui?label=SMUI)
