@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@smui/button": "^5.0.0-beta.6",
-    "@smui/card": "^5.0.0-beta.5",
+    "@smui/card": "^5.0.0-beta.6",
     "@sveltejs/adapter-vercel": "^1.0.0-next.29",
     "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
