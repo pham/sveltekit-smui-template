@@ -29,6 +29,6 @@
     "@sveltejs/kit": "next",
     "smui-theme": "^5.0.0-beta.7",
     "svelte": "^3.43.0",
-    "svelte-preprocess": "^4.9.5"
+    "svelte-preprocess": "^4.9.7"
   }
 }
