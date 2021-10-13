@@ -24,7 +24,7 @@
   "devDependencies": {
     "@smui/button": "^5.0.0-beta.6",
     "@smui/card": "^5.0.0-beta.7",
-    "@sveltejs/adapter-vercel": "^1.0.0-next.30",
+    "@sveltejs/adapter-vercel": "^1.0.0-next.31",
     "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
     "smui-theme": "^5.0.0-beta.7",
