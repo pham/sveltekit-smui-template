@@ -28,7 +28,7 @@
     "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
     "smui-theme": "^5.0.0",
-    "svelte": "^3.44.2",
+    "svelte": "^3.44.3",
     "svelte-preprocess": "^4.10.0"
   }
 }
