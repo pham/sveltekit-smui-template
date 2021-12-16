@@ -22,7 +22,7 @@
     "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
   },
   "devDependencies": {
-    "@smui/button": "^6.0.0-beta.8",
+    "@smui/button": "^6.0.0-beta.9",
     "@smui/card": "^5.0.1",
     "@sveltejs/adapter-vercel": "^1.0.0-next.32",
     "@sveltejs/app-utils": "next",
