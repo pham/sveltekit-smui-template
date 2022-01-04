@@ -5,7 +5,12 @@ const config = {
   preprocess: preprocess(),
   kit: {
     target: '#svelte',
-    adapter: vercel()
+    adapter: vercel(),
+    vite: {
+      ssr: {
+        noExternal: [/^@material\//, /^@smui(?:-extra)?\//]
+      }
+    }
   }
 };
 
