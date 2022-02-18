@@ -4,7 +4,6 @@ import vercel from '@sveltejs/adapter-vercel';
 const config = {
   preprocess: preprocess(),
   kit: {
-    target: '#svelte',
     adapter: vercel(),
     vite: {
       ssr: {
