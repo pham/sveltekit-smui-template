@@ -11,12 +11,12 @@
   "bugs": {
     "url": "https://github.com/pham/sveltekit-smui-template/issues"
   },
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev --host 0.0.0.0 --port 5002",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "dev": "vite dev --host 0.0.0.0 --port 5002",
+    "build": "vite build",
+    "preview": "vite preview",
     "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
     "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
     "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
@@ -26,11 +26,11 @@
     "@material/typography": "^14.0.0",
     "@smui/button": "^6.0.0-beta.16",
     "@smui/icon-button": "^6.0.0-beta.16",
-    "@sveltejs/adapter-vercel": "^1.0.0-next.59",
+    "@sveltejs/adapter-vercel": "^1.0.0-next.61",
     "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
-    "smui-theme": "^5.0.0",
-    "svelte": "^3.48.0",
+    "smui-theme": "^6.0.0-beta.16",
+    "svelte": "^3.49.0",
     "svelte-preprocess": "^4.10.7"
   }
 }

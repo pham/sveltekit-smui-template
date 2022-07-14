@@ -8,3 +8,4 @@ yarn-error.log
 *.swp
 static/smui*.css
 .vercel_build_output/
+.vercel/

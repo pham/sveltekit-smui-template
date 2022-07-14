@@ -5,11 +5,6 @@ const config = {
   preprocess: preprocess(),
   kit: {
     adapter: vercel(),
-    vite: {
-      ssr: {
-        noExternal: [/^@material\//, /^@smui(?:-extra)?\//]
-      }
-    }
   }
 };
 
