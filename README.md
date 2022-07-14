@@ -2,7 +2,7 @@
 ![CodeQL](https://github.com/pham/sveltekit-smui-template/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Svelte](https://badgen.net/npm/v/svelte?label=Svelte)
 ![SvelteKit](https://badgen.net/npm/v/@sveltejs/kit/next?label=SvelteKit)
-![SMUI](https://badgen.net/npm/v/smui?label=SMUI)
+![SMUI](https://badgen.net/npm/v/svelte-material-ui?label=SMUI)
 
 Tempate for [sveltejs-kit] + [svelte-material-ui].
 
