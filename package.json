@@ -26,7 +26,7 @@
     "@material/typography": "^14.0.0",
     "@smui/button": "^6.0.0-beta.16",
     "@smui/icon-button": "^6.0.0-beta.16",
-    "@sveltejs/adapter-vercel": "^1.0.0-next.63",
+    "@sveltejs/adapter-vercel": "^1.0.0-next.64",
     "@sveltejs/app-utils": "next",
     "@sveltejs/kit": "next",
     "smui-theme": "^6.0.0-beta.16",
