@@ -14,9 +14,9 @@
   "version": "2.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite dev --host 0.0.0.0 --port 5002",
+    "dev": "vite --host 0.0.0.0 --port 5002",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --host 0.0.0.0 --port 5002",
     "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
     "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
     "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
