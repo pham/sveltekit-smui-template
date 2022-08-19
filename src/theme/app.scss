@@ -1,30 +1,31 @@
 @use 'sass:color';
-
 @use '@material/theme/styles';
-
 @use '@material/theme/index' as theme;
 
+$font-sans: 'Roboto', sans-serif;
+$font-mono: 'Roboto Mono', monospace;
+
 html {
-  --monoFont: 'Roboto Mono', monospace;
-  --sansFont: 'Roboto', sans-serif;
+  --monoFont: #{$font-mono};
+  --sansFont: #{$font-sans};
 }
 
 body {
   margin: 0;
   background-color: theme.$background;
   color: theme.$on-surface;
-  font-family: var(--sansFont);
+  font-family: $font-sans;
   font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: theme.$background;
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: theme.$surface;
   border-radius: 6px;
   border: 3px solid theme.$background;
@@ -45,7 +46,7 @@ h1 {
 }
 
 code {
-  font-family: var(--monoFont);
+  font-family: $font-mono;
   font-size: calc(1em - 2px);
   background-color: theme.$secondary;
   padding: 0.2em 0.4em;
@@ -59,9 +60,9 @@ code {
 .vertical-center {
   display: flex;
   align-items: center;
-}
-.vertical-center .material-icons {
-  vertical-align: initial!important;
+  .material-icons {
+    vertical-align: initial!important;
+  }
 }
 
 .surface-lighter-bg {
