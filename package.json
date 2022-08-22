@@ -24,7 +24,7 @@
   "devDependencies": {
     "@material/theme": "^14.0.0",
     "@material/typography": "^14.0.0",
-    "@smui/button": "^6.0.0",
+    "@smui/button": "^6.1.0",
     "@smui/icon-button": "^6.1.0",
     "@sveltejs/adapter-vercel": "^1.0.0-next.67",
     "@sveltejs/app-utils": "next",
