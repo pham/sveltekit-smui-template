@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 5002",
     "build": "vite build",
+    "clean": "sed '0,/^#---/d' .gitignore | xargs -I % sh -c 'eval rm -r %'",
     "preview": "vite preview --host 0.0.0.0 --port 5002",
     "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
     "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",

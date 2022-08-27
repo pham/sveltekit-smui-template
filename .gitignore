@@ -1,11 +1,9 @@
-.DS_Store
-/node_modules/
-/src/node_modules/@sapper/
-yarn-error.log
-/__sapper__/
-/.svelte-kit/
-.env
 *.swp
+# sed '0,/^#---/d' .gitignore | xargs -I % sh -c 'eval rm -r %'
+# don't delete line below
+#---
+node_modules/
+.svelte-kit/
 static/smui*.css
 .vercel_build_output/
 .vercel/
