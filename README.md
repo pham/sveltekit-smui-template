@@ -10,7 +10,7 @@ What it looks like:
 https://sveltekit-smui-template.aquaron.com
 
 ```sh
-$ npx degit "pham/sveltekit-smui" my-app
+$ npx degit "pham/sveltekit-smui-template" my-app
 $ cd my-app
 $ npm i
 $ npm run dev
